@@ -1,25 +1,24 @@
-
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-:root{
-  --black:#131314;
-  --primary:#18d26e;
-  --primary-hover:#35e888;
-  --secondary:#2547dc;
+:root {
+  --black: #131314;
+  --primary: #18d26e;
+  --primary-hover: #35e888;
+  --secondary: #2547dc;
 }
 body {
   font-family: "Open Sans", sans-serif;
-  background:var(--black) url('./../img/night_bg.svg') no-repeat center center/cover;
+  background: var(--black) url("./../img/night_bg.svg") no-repeat center
+    center/cover;
   color: #fff;
   position: relative;
 }
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   width: 8px;
-  background-color: rgb(66, 66, 66) ;
+  background-color: rgb(66, 66, 66);
 }
-body::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb {
   background-color: var(--primary);
 }
 @media (min-width: 1024px) {
@@ -46,7 +45,7 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
-.text-inherit{
+.text-inherit {
   color: inherit !important;
 }
 
@@ -66,11 +65,11 @@ h6 {
 #header * {
   transition: ease-in-out 0.3s;
 }
-#header .logo{
+#header .logo {
   width: 80px;
 }
 
-#header.header-top .logo{
+#header.header-top .logo {
   width: 80px;
   height: auto;
   object-fit: contain;
@@ -114,12 +113,12 @@ h6 {
   border-radius: 50%;
   width: 12px;
   height: 12px;
-  animation: pulse 1s ease-out infinite alternate; 
+  animation: pulse 1s ease-out infinite alternate;
 }
 
 @keyframes pulse {
   0% {
-    box-shadow: 0px 0px 0px 0px green; 
+    box-shadow: 0px 0px 0px 0px green;
   }
   100% {
     box-shadow: 0px 0px 0px 5px rgba(48, 255, 48, 0.525);
@@ -147,7 +146,7 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgb(255 255 255 / 34%);
   color: #fff;
   line-height: 1;
   margin-right: 8px;
@@ -159,10 +158,10 @@ h6 {
 #header .social-links a:hover {
   background: var(--primary);
 }
-#header.header-top .container{
+#header.header-top .container {
   flex-direction: row;
 }
-#header .container{
+#header .container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -193,7 +192,7 @@ h6 {
   background: rgba(0, 0, 0, 0.9);
 }
 
-#header.header-top .social-links{
+#header.header-top .social-links {
   position: fixed;
   bottom: 5%;
   right: 5px;
@@ -255,7 +254,7 @@ h6 {
   position: relative;
 }
 
-.navbar li+li {
+.navbar li + li {
   margin-left: 30px;
 }
 
@@ -295,7 +294,7 @@ h6 {
 }
 
 .navbar a:hover:before,
-.navbar li:hover>a:before,
+.navbar li:hover > a:before,
 .navbar .active:before {
   visibility: visible;
   width: 25px;
@@ -304,7 +303,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
+.navbar li:hover > a {
   color: #fff;
 }
 
@@ -369,7 +368,7 @@ h6 {
   padding: 12px 20px;
 }
 
-.navbar-mobile li+li {
+.navbar-mobile li + li {
   margin: 0;
 }
 
@@ -1017,7 +1016,7 @@ section .container {
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
 
@@ -1025,14 +1024,14 @@ section .container {
   font-size: 15px;
   padding: 15px 0 0 0;
 }
-.mobile-links{
+.mobile-links {
   display: none;
 }
 @media (max-width: 992px) {
   .portfolio-details .portfolio-info {
     padding-top: 20px;
   }
-  .mobile-links{
+  .mobile-links {
     list-style: none;
     display: flex;
     gap: 14px;
@@ -1128,7 +1127,7 @@ section .container {
   font-weight: 600;
 }
 
-.contact .php-email-form .error-message br+br {
+.contact .php-email-form .error-message br + br {
   margin-top: 25px;
 }
 
@@ -1196,7 +1195,7 @@ section .container {
   padding: 12px 15px;
 }
 
-.contact .php-email-form button[type=submit] {
+.contact .php-email-form button[type="submit"] {
   background: var(--primary);
   border: 0;
   padding: 10px 30px;
@@ -1205,7 +1204,7 @@ section .container {
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #15bb62;
 }
 
@@ -1241,6 +1240,14 @@ section .container {
     background: rgba(0, 0, 0, 0.8);
   }
 }
+@media (max-width: 400px) {
+  #header .container {
+    padding: 0 !important;
+  }
+  #header .logo {
+    width: 60px !important;
+  }
+}
 
 .credits a {
   color: var(--primary);
@@ -1250,8 +1257,7 @@ section .container {
 .credits a:hover {
   color: #fff;
 }
-.my-img{   
+.my-img {
   filter: grayscale(0.7) contrast(1) saturate(1.5);
   border-radius: 5px;
 }
-
