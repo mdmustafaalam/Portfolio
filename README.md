@@ -47,7 +47,7 @@
 
 **📬 Contact Me**
       If you would like to work with me or discuss a project, feel free to reach out.
-          📧 Email: mdmustafaalam@example.com
+          📧 Email: mustafaalam3240@gmail.com
           🌐 Portfolio: https://mdmustafaalam.github.io/Portfolio/
           💼 LinkedIn: https://www.linkedin.com/in/mdmustafaalam/
           🐙 GitHub: https://github.com/mdmustafaalam
