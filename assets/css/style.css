@@ -469,6 +469,10 @@ h6 {
   .navbar{
     margin-top:0 !important;
   }
+
+  .section-title p{
+    font-size: 33px !important;
+  }
 }
 
 /*--------------------------------------------------------------
